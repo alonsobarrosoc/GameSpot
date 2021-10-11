@@ -24,5 +24,10 @@ namespace GameSpot
             Session.Abandon();
             Response.Redirect("login.aspx");
         }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("nuevaCritica.aspx");
+        }
     }
 }
