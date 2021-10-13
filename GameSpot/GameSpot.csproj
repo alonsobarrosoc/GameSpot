@@ -77,10 +77,12 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="datosGameSpot.sql" />
     <Content Include="editarPerfil.aspx" />
     <Content Include="home.aspx" />
     <Content Include="login.aspx" />
     <Content Include="nuevaCritica.aspx" />
+    <Content Include="tablasGameSpot.sql" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

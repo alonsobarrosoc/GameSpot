@@ -4,49 +4,39 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Nueva Crítica</title>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
             <br />
-            <br />
-            <asp:Button ID="Button1" runat="server" BackColor="#CC0000" ForeColor="White" OnClick="Button1_Click" Text="Cerrar Sesión" />
-            <br />
-            <br />
-            <asp:Button ID="Button2" runat="server" Text="Regresar" />
+            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Regresar" />
             <br />
             <br />
             <br />
-            <asp:Label ID="Label4" runat="server" Text="Selecciona el juago"></asp:Label>
-&nbsp;&nbsp;&nbsp;
+            Genera una nueva crítica<br />
+            <br />
+            Consola&nbsp;&nbsp;&nbsp;
+            <asp:DropDownList ID="DropDownList2" runat="server">
+            </asp:DropDownList>
+            <br />
+            <br />
+            Título&nbsp;&nbsp;&nbsp; <asp:TextBox ID="TextBox1" runat="server" Width="272px"></asp:TextBox>
+&nbsp;&nbsp;&nbsp; Calificación&nbsp;&nbsp;&nbsp;
             <asp:DropDownList ID="DropDownList1" runat="server">
             </asp:DropDownList>
             <br />
             <br />
             <br />
-            <asp:Label ID="Label1" runat="server" Text="Título:"></asp:Label>
-&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="TextBox1" runat="server" Height="16px" Width="409px"></asp:TextBox>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Label ID="Label3" runat="server" Text="Calificación:"></asp:Label>
-&nbsp;&nbsp;&nbsp;
-            <asp:DropDownList ID="DropDownList2" runat="server">
-            </asp:DropDownList>
-            <br />
-            <br />
-            <asp:Label ID="Label2" runat="server" Text="Contenido"></asp:Label>
-            <br />
-            <asp:TextBox ID="TextBox2" runat="server" Height="222px" Width="961px"></asp:TextBox>
+            Contenido<br />
+            <asp:TextBox ID="TextBox2" runat="server" Height="36px" Width="505px"></asp:TextBox>
             <br />
             <br />
             <br />
-            <asp:Button ID="Button3" runat="server" Text="Enviar" />
+            <asp:Label ID="Label1" runat="server"></asp:Label>
             <br />
             <br />
-            <br />
-            <br />
-            <br />
+            <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Publicar" />
             <br />
         </div>
     </form>

@@ -18,7 +18,7 @@
             <br />
             <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Hacer una crítica" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="Button3" runat="server" Text="Editar perfil" />
+            <asp:Button ID="Button3" runat="server" Text="Editar perfil" OnClick="Button3_Click" />
             <br />
             <br />
             <br />

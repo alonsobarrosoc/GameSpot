@@ -17,7 +17,7 @@ namespace GameSpot
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            String s = "select nombre from usuario where email=? and password=?";
+            String s = "select nombre, claveU from usuario where email=? and password=?";
             String email = "", password = "";
             email = TextBox1.Text;
             password = TextBox2.Text;
@@ -26,8 +26,6 @@ namespace GameSpot
             OdbcConnection conexion = conABD.con;
             OdbcCommand comando = new OdbcCommand(s, conexion);
             
-            Console.WriteLine(email);
-            Console.WriteLine(password);
 
             comando.Parameters.AddWithValue("email", email);
             comando.Parameters.AddWithValue("password", password);
@@ -35,10 +33,11 @@ namespace GameSpot
             if(lector.HasRows == true)
             {
                 lector.Read();
-                String nombreUsuario;
-                nombreUsuario= lector.GetString(0);
+                String nombreUsuario = lector.GetString(0);
+                String claveU = lector.GetString(1);
                 lector.Close();
                 Session.Add("nombreDelUsuario", nombreUsuario);
+                Session.Add("claveU", claveU);
                 Session.Timeout = 30; //Tenemos 30 min porque es de cr'iticas y no de bancos
                 Response.Redirect("home.aspx");
             }
